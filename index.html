@@ -3430,7 +3430,6 @@
             const content = document.getElementById('content').value.trim();
             if (guestName && content) {
                 document.getElementById("success").style.display = "block";
-                document.getElementById("error-v2").style.display = "none";
                 sendTelegramMessage(guestName, content); // Gửi thông điệp đến bot Telegram
             }
         });
