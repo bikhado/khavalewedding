@@ -50,7 +50,7 @@
         }
         gtag("js", new Date());
         gtag("config", "G-K9L0ZFE1PJ");
-    </script>    
+    </script>
     <style type="text/css">
         .fancybox-margin {
             margin-right: 17px;
@@ -1213,7 +1213,8 @@
                                         <div class="d-inline-block">
                                             <h3 class="w-100">LỄ CƯỚI NHÀ NAM</h3>
                                             <p class="w-100 mb-2 mt-2"><i class="fa fa-clock" aria-hidden="true"></i>
-                                                <strong>10:30 25/01/2025</strong></p>
+                                                <strong>10:30 25/01/2025</strong>
+                                            </p>
                                             <p class="w-100 mb-0 mt-1">
                                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                                                 <span>Tư Gia - </span>
@@ -1297,7 +1298,8 @@
                                         <div class="d-inline-block">
                                             <h3 class="w-100">LỄ CƯỚI NHÀ NỮ</h3>
                                             <p class="w-100 mb-2 mt-2"><i class="fa fa-clock" aria-hidden="true"></i>
-                                                <strong>08:00 25/01/2025</strong></p>
+                                                <strong>08:00 25/01/2025</strong>
+                                            </p>
                                             <p class="w-100 mb-0 mt-1">
                                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                                                 <span>Tư Gia - </span>
@@ -1380,7 +1382,8 @@
                                         <div class="d-inline-block">
                                             <h3 class="w-100">TIỆC CƯỚI NHÀ NAM</h3>
                                             <p class="w-100 mb-2 mt-2"><i class="fa fa-clock" aria-hidden="true"></i>
-                                                <strong>11:00 25/01/2025</strong></p>
+                                                <strong>11:00 25/01/2025</strong>
+                                            </p>
                                             <p class="w-100 mb-0 mt-1">
                                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                                                 <span>Diamond Palace Sảnh 3- </span>
@@ -1462,7 +1465,8 @@
                                         <div class="d-inline-block">
                                             <h3 class="w-100">TIỆC CƯỚI NHÀ NỮ</h3>
                                             <p class="w-100 mb-2 mt-2"><i class="fa fa-clock" aria-hidden="true"></i>
-                                                <strong>09:00 25/01/2025</strong></p>
+                                                <strong>09:00 25/01/2025</strong>
+                                            </p>
                                             <p class="w-100 mb-0 mt-1">
                                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                                                 <span>Tư Gia - </span>
@@ -1550,7 +1554,7 @@
                             <span class="h-lines"></span><span class="v-lines"></span>
                             <h1 class="section-title">Sổ Lưu Bút</h1>
                             <form id="wish-form" class="form validate-rsvp-form row contact-validation-active"
-                                 novalidate="novalidate">
+                                novalidate="novalidate">
                                 <div>
                                     <input type="text" id="tenCuaBan" name="name" placeholder="Tên của bạn*"
                                         class="form-control" />
@@ -2912,7 +2916,7 @@
                                 </div>
                                 <div class="clearfix error-handling-messages">
                                     <div id="success">Thank you</div>
-                                    <div id="error-v2" style="color:red">Vui lòng nhập đầy đủ thông tin!</div>
+                                    <!-- <div id="error-v2" style="color:red">Vui lòng nhập đầy đủ thông tin!</div> -->
                                 </div>
                             </form>
                         </div>
@@ -3414,7 +3418,7 @@
         style="width: 20.27px; height: 20.27px; position: absolute; font-size: 0px; z-index: 999999; top: 2464px; left: 1158.31px;" />
     <audio src="https://cdn.biihappy.com/ziiweb/wedding-musics/BeautifulInWhite-ShaneFilan-524801.mp3"
         controls="controls" loop="" autoplay="autoplay" style="display: none;"></audio>
-<script type="text/javascript">
+    <script type="text/javascript">
         var photoGalleries = [];
 
         const telegramBotToken = '7797805702:AAEcBYrIABnTTfnfuH9F1mp5SwLVvDTct5Q'; // Thay thế YOUR_BOT_TOKEN bằng token bot của bạn
@@ -3427,14 +3431,11 @@
                 document.getElementById("success").style.display = "block";
                 document.getElementById("error-v2").style.display = "none";
                 sendTelegramMessage(guestName, content); // Gửi thông điệp đến bot Telegram
-            } else {
-                document.getElementById("success").style.display = "none";
-                document.getElementById("error-v2").style.display = "block";
             }
         });
 
         function sendTelegramMessage(guestName, content) {
-            const message = `Khách mời xác nhận tham dự - Tên: ${guestName} | nội dung : ${content}`;
+            const message = `Tên: ${guestName} | nội dung : ${content}`;
             const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
 
             fetch(url)
